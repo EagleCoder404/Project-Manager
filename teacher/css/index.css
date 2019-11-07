@@ -1,0 +1,33 @@
+nav
+{
+  background: #24292e;
+ width:400px;
+ margin:10px auto;
+ transition-duration: 0.3s;
+ text-align: center;
+
+}
+nav:hover
+{
+
+  width: 450px;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+nav .main-nav
+{
+    padding:15px;
+  color:white;
+  font-family: helvetica;
+  display: inline-block;
+}
+.main-nav:nth-child(1)
+{
+  border-right: 2px solid white;
+}
+.main-nav:nth-child(2)
+{
+  border-right: 2px solid white;
+}
