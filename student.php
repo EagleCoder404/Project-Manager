@@ -11,7 +11,7 @@
 	<button type="submit" id="some2">MANAGE PREVIOUS PROJECT</button>
 	<button type="submit" id="some3">VIEW ACTIVITY</button>
 	<div class="show" id="show">
-	
+
 	</div>
 	<div class="side_nav">
 	<div class="button1" id="button1">
@@ -32,7 +32,7 @@
 	<td><input type="file" name="file" id="file"></td>
 	</tr>
 	</table>
-	
+
 	</fieldset>
 	<fieldset>
 	<legend><h2>MULTIPLE FILES</h2></legend>
@@ -67,19 +67,19 @@ $( document ).ready(function() {
 		$("#button3").hide();
 		$("#button1").show();
 	});
-	
+
 	 $("#some2").click(function(){
 		$("#button2").show();
 		$("#button3").hide();
 		$("#button1").hide();
 	});
-	
+
 	 $("#some3").click(function(){
 		$("#button2").hide();
 		$("#button3").show();
 		$("#button1").hide();
 	});
-	
+
 	$("#upload").click(function(e){
 		e.preventDefault();
 		$.ajax({
@@ -91,6 +91,9 @@ $( document ).ready(function() {
 			success:function(response){
 				$("#result").show();
 				$("#result").html(response);
+			},
+			error:function(x,y,z){
+				console.log(x+" "+y+" "+z)
 			}
 		});
 	});
