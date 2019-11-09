@@ -2,17 +2,18 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="header_php/header.css">
+    <link rel="stylesheet" href="../header_php/header.css">
     <link rel="stylesheet" href="css/index.css">
     <title></title>
   </head>
   <body>
-      <?php include "header_php/header.php"; ?>
+      <?php include "../header_php/header.php"; ?>
       <div class="sign-up-box">
         <div class="login-header">
               Sign Up.
         </div>
-        <form class="sign-up" action="authentication/signup.php" method="POST">
+        <form class="sign-up" action="../
+        authentication/signup.php" method="POST">
           <!-- <div class="type">
             <div class="student">
               Student

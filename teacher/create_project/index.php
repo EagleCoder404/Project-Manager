@@ -13,11 +13,12 @@
         Create  Project
       </div>
       <form class="main-form" action="" method="post">
-        <input type="text" name="project_name" value="" placeholder="Name" required>
+        <input type="" name="project_name" value="" placeholder="Name" required>
         <input type="text" name="project_id" value="" placeholder="Id" required>
         <input type="text" name="sub_code" value="" placeholder="Submission Code" required>
         <input type="text" name="user_id" value="" placeholder="Leader Id" required>
         <input type="submit" name="" value="Create It!">
+
       </form>
     </div>
   </body>

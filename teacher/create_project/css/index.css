@@ -5,12 +5,16 @@
 .form-box
 {
   min-width: 400px;
-  width:50vw;
+  width:45vw;
   overflow: auto;
   margin:10px auto;
   box-shadow:0px 0px 10px grey;
   border-radius: 3px;
+  animation-name: go-up;
+  animation-duration: 0.5s;
+  /* animation-delay: 0.3s; */
 }
+
 .form-header{
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
@@ -33,6 +37,7 @@
   font-family: helvetica;
   border:none;
   padding:6px;
+  background-color:#f4f4f4;
   transition-duration: 0.3s;
 }
 input:focus
@@ -51,4 +56,16 @@ input[type='submit']
   font-weight: bold;
   color:white;
   font-size:20px;
+}
+
+@keyframes go-up {
+  from{
+    margin:1000px auto;
+    /* transform:rotate(0deg); */
+  }
+  to
+  {
+    margin:10px auto;
+    /* transform:rotate(360deg); */
+  }
 }
